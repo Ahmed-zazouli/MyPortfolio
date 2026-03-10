@@ -150,16 +150,30 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
     min-height: 85vh;
-    background: var(--bg-main);
-    transition: background-color 0.3s ease;
+    background-image: linear-gradient(rgba(248, 249, 250, 0.85), rgba(248, 249, 250, 0.85)), url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+[data-theme="dark"] .hero-section {
+    background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('assets/images/hero-bg.jpg');
 }
 
 .profile-img {
-    max-width: 300px;
+    max-width: 350px;
     width: 100%;
-    border: 5px solid var(--card-bg);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
-    transition: border-color 0.3s ease;
+    border: 8px solid var(--card-bg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.profile-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* About Section */
