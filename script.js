@@ -247,7 +247,7 @@ const translations = {
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize AOS Animations
     AOS.init({
-        once: true, // whether animation should happen only once - while scrolling down
+        once: false, // animate every time the user scrolls
         offset: 50, // offset (in px) from the original trigger point
     });
 
