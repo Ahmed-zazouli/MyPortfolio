@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Typography and Layout Helpers */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    margin-top: -15px;
+    border-radius: 2px;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0d6efd !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 85vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.profile-img {
+    max-width: 300px;
+    width: 100%;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+}
+
+/* Experience Timeline */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 100%;
+    width: 4px;
+    background-color: #dee2e6;
+    border-radius: 2px;
+}
+
+.timeline .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.timeline .card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -23px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+/* Education Section */
+#education {
+    background-color: white;
+}
+
+.edu-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.icon-box i {
+    color: #0d6efd;
+}
+
+/* Skills Section */
+#skills {
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+.skill-card {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    font-weight: 500;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa;
+}
+
+.contact-item {
+    padding: 15px;
+}
+
+.contact-item h5 {
+    color: #333;
+}
+
+.contact-item a:hover {
+    color: #0d6efd !important;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1e21 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .profile-img {
+        max-width: 250px;
+    }
+
+    .timeline {
+        padding-left: 15px;
+    }
+
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline .card::before {
+        left: -38px;
+    }
+}
